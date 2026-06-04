@@ -1,0 +1,55 @@
+{
+  "name": "fullstock-api",
+  "scripts": {
+    "dev": "node --watch --env-file=.env src/server.ts",
+    "build": "rimraf dist && tsc",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "db:new": "dbmate new",
+    "db:up": "dbmate up",
+    "db:migrate": "dbmate migrate",
+    "db:rollback": "dbmate rollback",
+    "db:status": "dbmate status",
+    "db:drop": "dbmate drop",
+    "db:reset": "npm run db:drop && npm run db:up"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@tsconfig/node24": "^24.0.4",
+    "@tsconfig/strictest": "^2.0.8",
+    "@types/bcrypt": "^6.0.0",
+    "@types/connect-pg-simple": "^7.0.3",
+    "@types/express": "^5.0.6",
+    "@types/express-session": "^1.19.0",
+    "@types/node": "^25.6.0",
+    "@types/pg": "^8.20.0",
+    "eslint": "^10.2.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-import-resolver-typescript": "^4.4.4",
+    "eslint-plugin-import-x": "^4.16.2",
+    "globals": "^17.5.0",
+    "jiti": "^2.6.1",
+    "prettier": "^3.8.3",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.59.0"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "camelcase-keys": "^10.0.2",
+    "connect-pg-simple": "^10.0.0",
+    "dbmate": "^2.32.0",
+    "express": "^5.2.1",
+    "express-session": "^1.19.0",
+    "pg": "^8.20.0",
+    "y": "^0.3.2",
+    "zod": "^4.4.3"
+  }
+}
