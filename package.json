@@ -1,5 +1,5 @@
 {
-  "name": "fullstock-api",
+  "name": "codeable-ts-bs-e-commerce-full-api-v1",
   "scripts": {
     "dev": "node --watch --env-file=.env src/server.ts",
     "build": "rimraf dist && tsc",
