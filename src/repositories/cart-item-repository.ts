@@ -1,8 +1,8 @@
 import camelcaseKeys from "camelcase-keys";
 import camelCaseKeys from "camelcase-keys";
-import * as db from "../db/index.ts";
 import type { PoolClient,QueryResult } from "pg";
 import type { itemProduct } from "../controllers/cart-item.controller.ts";
+import * as db from "../db/index.ts";
 
 //TYPES ::::::::::::::::::
 interface CartItemRow {
